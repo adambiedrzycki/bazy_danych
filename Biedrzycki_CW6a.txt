@@ -1,0 +1,23 @@
+Zad. 1
+sugerowany klucz główny(złożony):
+id_produktu, id_klienta, data_zamowienia, ilość
+id_produktu -> nazwa_produktu, cena_produktu, VAT
+id_klienta -> nazwa_klienta
+cena_produktu -> suma_brutto, suma_netto
+ilość -> suma_netto
+suma_netto, VAT -> suma_brutto
+
+Zad. 2
+Klucze kandydujące:
+1: id_zamówienia
+2: id_produktu+id_klienta
+3: id_produktu+id_klienta+data_zamówienia
+4: id_produktu+id_klienta+data_zamówienia+ilość
+
+Zad. 3
+id_pomieszczenia -> numer_pomieszczenia, powierzchnia, liczba_okien, liczba_drzwi
+id_budynku -> id_pomieszczenia, ulica, miasto, kod_pocztowy
+
+Klucze kandydujące:
+1:id_pomieszczenia
+2:id_pomieszczenia+id_budynku
